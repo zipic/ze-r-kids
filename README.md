@@ -1,27 +1,41 @@
 # ZeRKids
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Live Demo
 
-## Development server
+Check out the live demo [here](https://ze-r-kids-ijla.vercel.app/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
+- HTML
+- SCSS
+- BEM
+- TypeScript
+- Angular
+- AngularMaterial
+- RxJs
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Add to Cart::** Users can add products to their cart with a single click.
+  
+2. **Add to Favorite::** Users can add products to their favorite list with a single click.
 
-## Build
+3. **Cart Management::** The application provides options to increase, decrease, or remove items from the user's cart.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. **Persistent Cart::** The user's cart data is stored locally, ensuring a seamless experience even if the user navigates away from the page.
+   
+5. **Sorting Options::** Users can sort products based on different categories such as color and price.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to Run Locally
 
-## Running end-to-end tests
+To run the project locally, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone the Repository:**
+   git clone https://github.com/zipic/ze-r-kids.git
+   cd ze-r-kids
+2. **Install Dependencies:**
+   npm install
+3. **Run the Development Server:**
+   ng serve
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The application will be available at http://localhost:4200
