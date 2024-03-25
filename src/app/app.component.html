@@ -1,0 +1,6 @@
+<app-login class="menu" *ngIf="isLogin === true"></app-login>
+<div [ngClass]="{'content-wrapper': isLogin}">
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+</div>

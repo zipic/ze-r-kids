@@ -1,0 +1,30 @@
+<div class="header">
+  <div class="header__left">
+    <a routerLink="/home" class="header__logo">
+      <img class="header__logo-img" src="/assets/img/logo.jpeg" alt="logo">
+    </a>
+    <img class="header__icon" src="/assets/icons/phone-svgrepo-com.svg" alt="phone">
+    <a href="+38093800000" class="header__phone">0938000000</a>
+  </div>
+  <div class="header__right">
+    <a routerLink="/favorites" class="header__favorite">
+      <img class="header__icon" src="/assets/icons/heart.svg" alt="heart">
+      <p class="header__favorite-count" *ngIf="(favoriteBows$ | async)?.length !== 0">
+        {{(favoriteBows$ | async)?.length}}
+      </p>
+    </a>
+    <a routerLink="/basket" class="header__basket">
+      <img class="header__icon" src="/assets/icons/basket.svg" alt="basket">
+      <p class="header__basket-count" *ngIf="(basketBows$ | async)?.length !== 0">
+        {{(basketBows$ | async)?.length}}
+      </p>
+    </a>
+      <button
+       class="header__login"
+       (click)="isOpen()"
+      >
+      <img class="header__icon" src="/assets/icons/login.svg" alt="login">
+      Увійти в кабінет
+    </button>
+  </div>
+</div>

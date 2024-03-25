@@ -1,0 +1,24 @@
+.finder {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100px;
+  background-color: rgba(255, 192, 203, 0.532);
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  &__search {
+    width: 800px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background-color: rgba(224, 172, 164, 0.416);
+    font-family: ShantellSans-Regular;
+    font-size: 21px;
+  }
+}

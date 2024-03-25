@@ -1,0 +1,43 @@
+<div class="filter">
+  <div class="filter__price">
+    <p>Ціна</p>
+      <div class="price">
+        <p>від</p>
+        <input
+          class="price__check"
+          type="number"
+          value="startValue"
+          [(ngModel)]="startValue"
+          readonly
+        >
+        <p>до</p>
+        <input
+          class="price__check"
+          type="number"
+          value="endValue"
+          [(ngModel)]="endValue"
+          readonly
+        >
+      </div>
+      <mat-slider ngDefaultControl [(ngModel)]="sliderValues" (ngModelChange)="onSliderChange()" min="50" max="500">
+        <input [(ngModel)]="startValue" matSliderStartThumb>
+        <input [(ngModel)]="endValue" matSliderEndThumb>
+      </mat-slider>
+    </div>
+    <p class="paragraph">Колір:</p>
+    <form class="color" action="checkbox">
+      <ul class="color__list" *ngFor="let color of colors">
+      <li class="color__list-items">
+        <input
+          class="color__check"
+          type="checkbox"
+          id="color"
+          [checked]="isChecked(color)"
+          (change)="findItem($event)"
+          [value]="color"
+        >
+          {{color}}
+        </li>
+    </ul>
+  </form>
+</div>

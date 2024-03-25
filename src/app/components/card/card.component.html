@@ -1,0 +1,29 @@
+<div class="card" *ngFor="let bow of filteredProducts(query, items, prices, name)">
+  <button
+    class="card__button-heart"
+    (click)="addFavorites(bow)"
+  >
+    <img
+      class="card__icon-heart"
+      [src]="isFavorite(bow) ? 'assets/icons/heart-active.svg' : 'assets/icons/heart-card.svg'"
+      alt="like"
+    >
+  </button>
+  <img class="card__image" src="{{bow.photo}}" alt="photo">
+  <p class="card__name">{{bow.name}}</p>
+  <p class="card__size">{{bow.size}}</p>
+  <div class="buy">
+    <p class="buy__price">{{bow.price}} грн</p>
+    <button
+      class="card__button-basket"
+      (click)="addToBasket(bow)"
+    >
+      <img
+        class="card__icon"
+        [src]="inBasket(bow) ? '/assets/icons/basket-card-active.svg': '/assets/icons/basket-card.svg'"
+        alt="basket"
+      >
+    </button>
+  </div>
+</div>
+

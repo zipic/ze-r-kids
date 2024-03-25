@@ -1,0 +1,4 @@
+<div class="sorry" *ngIf="products.length === 0">
+  <p>У вас ще не має вибраних товарів!</p>
+</div>
+<app-card class="favorite" [products]="products"></app-card>

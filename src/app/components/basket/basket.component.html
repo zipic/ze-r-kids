@@ -1,0 +1,43 @@
+<div class="sorry" *ngIf="basketBows.length === 0">
+  <p>Ваш кошик порожній!</p>
+</div>
+<div class="basket">
+  <section class="basket__cards">
+    <div class="basket__items" *ngFor="let bow of basketBows">
+      <img class="basket__img" src="{{bow.bow.photo}}" alt="">
+      <p class="basket__name">{{bow.bow.name}}</p>
+      <button
+        class="basket__minus"
+        (click)="hanldeMinus(bow)"
+      >
+        -
+      </button>
+      <p>{{bow.count}}</p>
+      <button
+        class="basket__plus"
+        (click)="handlePlus(bow)"
+      >
+        +
+      </button>
+      <p class="basket__price">{{bow.bow.price * bow.count}} грн</p>
+      <button
+        class="basket__delete"
+        (click)="handleDelete(bow)"
+      >
+        Видалити
+      </button>
+    </div>
+</section>
+  <section class="basket__total" *ngIf="basketBows.length">
+    <h2 class="basket__total-title">Загальна сума</h2>
+    <p class="basket__total-count">за {{countSum}} {{countSum === 1 ? 'товар' : (countSum >= 5 ? 'товарів' : 'товари')}}</p>
+    <div class="basket__line"></div>
+    <p class="basket__total-price">{{totalSum}} грн</p>
+
+    <button
+      class="basket__total-buy"
+    >
+      Купити
+    </button>
+  </section>
+</div>

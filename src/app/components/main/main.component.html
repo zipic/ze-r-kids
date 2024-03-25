@@ -1,0 +1,11 @@
+<app-finder></app-finder>
+<mat-tab-group (selectedTabChange)="changeFilter($event)">
+  <mat-tab label="Усі вироби"></mat-tab>
+  <mat-tab label="Бантики"></mat-tab>
+  <mat-tab label="Кліп-клап"></mat-tab>
+  <mat-tab label="Зажими"></mat-tab>
+</mat-tab-group>
+<div class="main">
+  <app-filter class="main__filter" [products]="products"></app-filter>
+  <app-card class="main__card" [products]="products" [query]="query" [items]="items" [prices]="prices" [name]="name"></app-card>
+</div>

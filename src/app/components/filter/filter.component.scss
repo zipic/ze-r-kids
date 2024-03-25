@@ -1,0 +1,81 @@
+.filter {
+  width: 350px;
+  border: 1px solid rgb(212, 132, 152);
+  border-radius: 9px;
+  font-family: ShantellSans-Regular;
+  font-size: 16px;
+  padding: 20px;
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &__check {
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(212, 132, 152);
+    font-family: ShantellSans-Regular;
+    font-size: 20px;
+    padding-left: 10px;
+    outline: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.color__list {
+  list-style-type: none;
+  padding: 0;
+
+  &-items {
+    display: flex;
+    align-items: center
+  }
+}
+
+.paragraph {
+  margin-top: 15px;
+}
+
+.color__check {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(212, 132, 152);
+  margin-right: 20px;
+}
+
+.color__check:checked:after {
+  background-color: rgb(212, 132, 152);
+  top: 20px;
+  content: '\2713';
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.mat-mdc-slider.mat-primary {
+  --mdc-slider-handle-color: rgb(212, 132, 152);
+  --mdc-slider-focus-handle-color: rgb(212, 132, 152);
+  --mdc-slider-hover-handle-color: rgb(212, 132, 152);
+  --mdc-slider-active-track-color: rgb(212, 132, 152);
+  --mdc-slider-inactive-track-color: rgb(212, 132, 152);
+  --mdc-slider-with-tick-marks-active-container-color: #fff;
+  --mdc-slider-with-tick-marks-inactive-container-color: rgb(212, 132, 152);
+}
+

@@ -1,0 +1,129 @@
+.basket {
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: ShantellSans-Regular;
+  font-size: 20px;
+  gap: 150px;
+  height: 100%;
+  background-color: rgba(224, 172, 164, 0.093);
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgb(212, 132, 152);
+    border-radius: 10px;
+    padding: 10px;
+    width: 700px;
+    height: 200px;
+    gap: 30px;
+  }
+
+  &__plus,
+  &__minus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(212, 132, 152);
+    border-radius: 10px;
+    align-items: center;
+    font-family: ShantellSans-Regular;
+    font-size: 20px;
+    background: rgb(212, 132, 152);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__delete {
+    width: 115px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(212, 132, 152);
+    border-radius: 10px;
+    font-family: ShantellSans-Regular;
+    font-size: 20px;
+    background: rgb(212, 132, 152);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+
+  &__line {
+    height: 1px;
+    width: 300px;
+    background: rgb(212, 132, 152);
+  }
+
+  &__total {
+    width: 300px;
+    height: 300px;
+    border: 1.5px solid rgb(212, 132, 152);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    &-price {
+      font-size: 30px;
+    }
+
+    &-buy {
+      width: 115px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(212, 132, 152);
+      border-radius: 10px;
+      font-family: ShantellSans-Regular;
+      font-size: 20px;
+      background: rgb(212, 132, 152);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &-title {
+      font-family: ShantellSans-Regular;
+      font-size: 30px;
+    }
+  }
+}
+
+.sorry {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-color: rgba(224, 172, 164, 0.093);
+  font-family: ShantellSans-Regular;
+  font-size: 50px;
+  color: rgb(212, 132, 152);
+}

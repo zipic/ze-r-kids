@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-tab-header {
+  --mat-tab-header-label-text-font: ShantellSans-Regular, sans-serif;
+  --mat-tab-header-label-text-size: 17px;
+  --mat-tab-header-label-text-tracking: 0.0892857143em;
+  --mat-tab-header-label-text-line-height: 36px;
+  --mat-tab-header-label-text-weight: 600;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

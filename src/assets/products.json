@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "photo": "https://i.imgur.com/Sj7YPHi.png",
+    "name": "Бант",
+    "size": "Великий",
+    "color": "Бежевий",
+    "price": 190
+  },
+  {
+    "id": 2,
+    "photo": "https://i.imgur.com/mCuBatd.png",
+    "name": "Бант",
+    "size": "Малий",
+    "color": "Рожевий",
+    "price": 170
+  },
+  {
+    "id": 3,
+    "photo": "https://i.imgur.com/Hw0ouno.png",
+    "name": "Бант",
+    "size": "Малий",
+    "color": "Чорно-білий",
+    "price": 60
+  },
+  {
+    "id": 4,
+    "photo": "https://i.imgur.com/3UAIzNs.png",
+    "name": "Бант",
+    "size": "Великий",
+    "color": "Голубий",
+    "price": 90
+  },
+  {
+    "id": 5,
+    "photo": "https://i.imgur.com/gUHU628.png",
+    "name": "Бант",
+    "size": "Великий",
+    "color": "Синій",
+    "price": 250
+  },
+  {
+    "id": 6,
+    "photo": "https://i.imgur.com/oIXRQko.png",
+    "name": "Бант",
+    "size": "Малий",
+    "color": "Айворі",
+    "price": 150
+  },
+  {
+    "id": 7,
+    "photo": "https://i.imgur.com/szivDKE.png",
+    "name": "Кліп-клап",
+    "size": "Малий",
+    "color": "голубий",
+    "price": 55
+  },
+  {
+    "id": 8,
+    "photo": "https://i.imgur.com/64goYdH.png",
+    "name": "Кліп-клап",
+    "size": "Малий",
+    "color": "золотий",
+    "price": 50
+  },
+  {
+    "id": 9,
+    "photo": "https://i.imgur.com/vH9SGaw.png",
+    "name": "Кліп-клап",
+    "size": "Малий",
+    "color": "голубий",
+    "price": 65
+  },
+  {
+    "id": 10,
+    "photo": "https://i.imgur.com/tKgvV81.png",
+    "name": "Зажим",
+    "size": "Малий",
+    "color": "рожевий",
+    "price": 65
+  },
+  {
+    "id": 11,
+    "photo": "https://i.imgur.com/fVl93mm.png",
+    "name": "Зажим",
+    "size": "Малий",
+    "color": "бежевий",
+    "price": 65
+  },
+  {
+    "id": 12,
+    "photo": "https://i.imgur.com/eJXWzp9.png",
+    "name": "Зажим",
+    "size": "Малий",
+    "color": "чорний",
+    "price": 65
+  }
+]
